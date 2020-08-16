@@ -1,0 +1,47 @@
+USE [Bankservice]
+GO
+/****** Object:  Table [dbo].[Bankservice]    Script Date: 16/08/2020 13:26:26 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Bankservice](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[UserName] [varchar](250) NULL,
+	[AMount] [varchar](100) NULL,
+	[userreferrncetype] [varchar](100) NULL,
+	[createddate] [datetime] NULL,
+ CONSTRAINT [PK__Bankserv__3214EC27DCC2D968] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Bankservice] ON 
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1, N'chandana', N'5000', N'Userone', CAST(N'2020-08-03T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (2, N'priya', N'10000', N'Usertwo', CAST(N'2020-08-03T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1032, N'chandana', N'-1000', N'Userone', CAST(N'2020-08-16T13:22:19.997' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1033, N'priya', N'1000', N'Usertwo', CAST(N'2020-08-16T13:22:20.107' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1034, N'priya', N'-500', N'Usertwo', CAST(N'2020-08-16T13:22:31.463' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1035, N'chandana', N'500', N'Userone', CAST(N'2020-08-16T13:22:31.470' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1036, N'chandana', N'-100', N'Userone', CAST(N'2020-08-16T13:22:45.860' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1037, N'priya', N'100', N'Usertwo', CAST(N'2020-08-16T13:22:45.863' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1038, N'priya', N'-250', N'Usertwo', CAST(N'2020-08-16T13:22:53.900' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1039, N'chandana', N'250', N'Userone', CAST(N'2020-08-16T13:22:53.907' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1040, N'priya', N'-1000', N'Usertwo', CAST(N'2020-08-16T13:23:49.550' AS DateTime))
+GO
+INSERT [dbo].[Bankservice] ([ID], [UserName], [AMount], [userreferrncetype], [createddate]) VALUES (1041, N'chandana', N'1000', N'Userone', CAST(N'2020-08-16T13:23:49.557' AS DateTime))
+GO
+SET IDENTITY_INSERT [dbo].[Bankservice] OFF
+GO
